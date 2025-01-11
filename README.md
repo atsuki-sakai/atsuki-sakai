@@ -15,6 +15,8 @@
     <img height="20" src="https://badgen.org/img/zenn/atsuki-sakai/articles?style=plastic" />
   </a> -->
 </p>
+## Contributions
+![github contribution grid snake animation](https://raw.githubusercontent.com/atsuki-sakai/atsuki-sakai/output/github-contribution-grid-snake-dark.svg)
 
 ## Stats
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=atsuki-sakai&theme=gruvbox)
@@ -26,6 +28,3 @@
 ## Trophy
 ![trophy](https://github-profile-trophy.vercel.app/?username=atsuki-sakai&theme=gruvbox)
 
-## Contributions
-![github contribution grid snake animation](https://raw.githubusercontent.com/atsuki-sakai/atsuki-sakai/output/github-contribution-grid-snake-dark.svg)
-# atsuki-sakai
