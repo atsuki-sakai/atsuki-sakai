@@ -3,7 +3,7 @@
     <img height="20" src="https://komarev.com/ghpvc/?username=atsuki-sakai" />
   </a>
   <a href="https://github.com/atsuki-sakai">
-    <img height="20" src="https://img.shields.io/github/followers/Keichan15?label=follow&logo=github&style=flat" />
+    <img height="20" src="https://img.shields.io/github/followers/atsuki-sakai?label=follow&logo=github&style=flat" />
   </a>
 <!--   <a href="http://qiita.com/atsuki-sakai">
     <img height="20" src="https://qiita-badge.apiapi.app/s/atsuki-sakai/posts.svg" />
@@ -25,3 +25,7 @@
 
 ## Trophy
 ![trophy](https://github-profile-trophy.vercel.app/?username=atsuki-sakai&theme=gruvbox)
+
+## Contributions
+![github contribution grid snake animation](https://raw.githubusercontent.com/atsuki-sakai/atsuki-sakai/output/github-contribution-grid-snake-dark.svg)
+# atsuki-sakai
