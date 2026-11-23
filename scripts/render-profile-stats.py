@@ -17,7 +17,7 @@ def render_card(repository_count: int, languages: Counter[str]) -> str:
         rows.append(
             f'    <text x="345" y="{y}">{escape(language)}</text>\n'
             f'    <rect x="552" y="{y - 14}" width="292" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>\n'
-            f'    <rect x="552" y="{y - 14}" width="{bar_width}" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>\n'
+            f'    <rect class="language-bar" style="--delay: {index * 120}ms" x="552" y="{y - 14}" width="{bar_width}" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>\n'
             f'    <text x="914" y="{y}" text-anchor="end">{count}</text>'
         )
     description = ", ".join(f"{language} {count}" for language, count in top_languages)
@@ -25,6 +25,27 @@ def render_card(repository_count: int, languages: Counter[str]) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="960" height="261" viewBox="0 0 960 261" role="img" aria-labelledby="title desc">
   <title id="title">Public repository stats</title>
   <desc id="desc">{repository_count} repositories. Top primary languages by repository count: {escape(description)}.</desc>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {{
+      .language-bar {{
+        transform-box: fill-box;
+        transform-origin: left center;
+        animation: draw-bar 8s cubic-bezier(.35,.1,.25,1) var(--delay) infinite;
+      }}
+      .speed-lines {{
+        animation: sweep-lines 8s ease-out infinite;
+      }}
+      @keyframes draw-bar {{
+        0%, 24%, 100% {{ transform: scaleX(1); }}
+        7% {{ transform: scaleX(.05); }}
+      }}
+      @keyframes sweep-lines {{
+        0%, 24%, 100% {{ opacity: .42; transform: translateX(0); }}
+        7% {{ opacity: .12; transform: translateX(-12px); }}
+        15% {{ opacity: .75; transform: translateX(7px); }}
+      }}
+    }}
+  </style>
   <defs>
     <pattern id="halftone" width="10" height="10" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1.4" fill="#713742"/>
@@ -36,6 +57,7 @@ def render_card(repository_count: int, languages: Counter[str]) -> str:
   <path fill="#211829" d="M4 4H956V257H4Z"/>
   <path fill="#f88169" d="M4 4H330L288 257H4Z"/>
   <path fill="url(#halftone)" clip-path="url(#stat-panel)" d="M168 0H335V261H122L168 216Z" opacity=".34"/>
+  <path class="speed-lines" d="M173 111h95m-79 18h67m-103 18h93" fill="none" stroke="#713742" stroke-width="4" opacity=".42"/>
   <path d="M330 4L288 257M4 4H956V257H4Z" fill="none" stroke="#130f18" stroke-width="7" stroke-linejoin="round"/>
   <path d="M345 64H914" stroke="#8a5366" stroke-width="2"/>
   <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">

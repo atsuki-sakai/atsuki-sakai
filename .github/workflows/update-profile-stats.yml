@@ -27,13 +27,14 @@ jobs:
             python3 scripts/render-profile-stats.py
           curl -fsSL --retry 2 --max-time 25 -H 'Accept-Language: en' "https://github.com/users/${PROFILE_OWNER}/contributions" |
             python3 scripts/render-contribution-map.py
+          python3 scripts/render-activity-languages.py
       - name: Publish changed cards
         run: |
-          if git diff --quiet -- assets/public-repositories.svg assets/contribution-map.svg; then
+          if git diff --quiet -- assets/public-repositories.svg assets/contribution-map.svg assets/activity-languages.svg; then
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/public-repositories.svg assets/contribution-map.svg
+          git add assets/public-repositories.svg assets/contribution-map.svg assets/activity-languages.svg
           git commit -m 'Refresh GitHub profile cards'
           git push
