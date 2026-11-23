@@ -1,32 +1,15 @@
-<p align="left">
-  <a href="https://github.com/atsuki-sakai">
-    <img height="20" src="https://komarev.com/ghpvc/?username=atsuki-sakai" />
-  </a>
-  <a href="https://github.com/atsuki-sakai">
-    <img height="20" src="https://img.shields.io/github/followers/atsuki-sakai?label=follow&logo=github&style=flat" />
-  </a>
-<!--   <a href="http://qiita.com/atsuki-sakai">
-    <img height="20" src="https://qiita-badge.apiapi.app/s/atsuki-sakai/posts.svg" />
-  </a> -->
-<!--   <a href="http://qiita.com/atsuki-sakai">
-    <img height="20" src="https://qiita-badge.apiapi.app/s/atsuki-sakai/contributions.svg" />
-  </a>
-  <a href="https://zenn.dev/atsuki-sakai">
-    <img height="20" src="https://badgen.org/img/zenn/atsuki-sakai/articles?style=plastic" />
-  </a> -->
-</p>
+![Atsuki Sakai · AI Agents, Web Apps, Cloud](assets/profile-banner.svg)
 
-## Contributions
-![github contribution grid snake animation](https://raw.githubusercontent.com/atsuki-sakai/atsuki-sakai/output/github-contribution-grid-snake-dark.svg)
+AIエージェントとWebアプリを開発しています。Google Cloudの運用や、日々の作業を自動化するツールを作っています。
 
-## Stats
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=atsuki-sakai&theme=gruvbox)
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=atsuki-sakai&theme=gruvbox)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=atsuki-sakai&theme=gruvbox)
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=atsuki-sakai&theme=gruvbox)
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=atsuki-sakai&theme=gruvbox&utcOffset=9)
+## 公開プロジェクト
 
-## Trophy
-![trophy](https://github-profile-trophy.vercel.app/?username=atsuki-sakai&theme=gruvbox)
+- **[Cloud Ops Team](https://github.com/atsuki-sakai/cloud-ops-team)** — Google ADKで構築したAIエージェントチーム。GCPのエラー調査や修正確認をGitHub Issues上で進めます。
+- **[Google Maps Reviews](https://github.com/atsuki-sakai/google-maps-reviews)** — Google マップの口コミをCSV・Excel・JSONに出力するmacOS向けPython CLI。
+- **[Strudel Guide JA](https://github.com/atsuki-sakai/strudel-guide-ja)** — ブラウザで音楽をライブコーディングできるStrudelの非公式日本語入門。
 
+## GitHubでの活動
 
+[![公開リポジトリ数と、リポジトリの主言語別トップ4](assets/public-repositories.svg)](https://github.com/atsuki-sakai?tab=repositories)
+
+[コントリビューションを見る](https://github.com/atsuki-sakai#user-content-contributions)

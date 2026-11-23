@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="728" height="259" viewBox="0 0 728 259" role="img" aria-labelledby="title desc">
+  <title id="title">Public repository stats</title>
+  <desc id="desc">61 repositories. Top primary languages by repository count: TypeScript 32, Python 9, JavaScript 7, Dart 4.</desc>
+  <rect x="1" y="1" width="726" height="257" rx="17" fill="#111d24" stroke="#46615f" stroke-width="2"/>
+  <path d="M255 31v196" stroke="#46615f"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="34" y="53" fill="#bcd1ca" font-size="19" font-weight="600">Public repositories</text>
+    <text x="32" y="150" fill="#f5f9f6" font-size="78" font-weight="700">61</text>
+    <text x="34" y="194" fill="#bcd1ca" font-size="17">Excludes forks</text>
+    <text x="34" y="219" fill="#bcd1ca" font-size="17">and archived repos</text>
+    <text x="285" y="53" fill="#bcd1ca" font-size="19" font-weight="600">Top languages by repository count</text>
+  </g>
+  <g fill="#f5f9f6" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="19">
+    <text x="285" y="96">TypeScript</text>
+    <rect x="464" y="83" width="176" height="12" rx="6" fill="#2e4947"/>
+    <rect x="464" y="83" width="176.0" height="12" rx="6" fill="#9de9b4"/>
+    <text x="690" y="96" text-anchor="end">32</text>
+    <text x="285" y="133">Python</text>
+    <rect x="464" y="120" width="176" height="12" rx="6" fill="#2e4947"/>
+    <rect x="464" y="120" width="49.5" height="12" rx="6" fill="#9de9b4"/>
+    <text x="690" y="133" text-anchor="end">9</text>
+    <text x="285" y="170">JavaScript</text>
+    <rect x="464" y="157" width="176" height="12" rx="6" fill="#2e4947"/>
+    <rect x="464" y="157" width="38.5" height="12" rx="6" fill="#9de9b4"/>
+    <text x="690" y="170" text-anchor="end">7</text>
+    <text x="285" y="207">Dart</text>
+    <rect x="464" y="194" width="176" height="12" rx="6" fill="#2e4947"/>
+    <rect x="464" y="194" width="22.0" height="12" rx="6" fill="#9de9b4"/>
+    <text x="690" y="207" text-anchor="end">4</text>
+  </g>
+</svg>

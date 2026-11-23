@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="272" viewBox="0 0 960 272" role="img" aria-labelledby="title desc">
+  <title id="title">Atsuki Sakai</title>
+  <desc id="desc">AI Agents, Web Apps, Cloud. A dark teal banner with a connected-node illustration.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#111a21"/>
+      <stop offset="1" stop-color="#112a2c"/>
+    </linearGradient>
+    <linearGradient id="signal" x2="1" y2="1">
+      <stop stop-color="#defa9e"/>
+      <stop offset="1" stop-color="#5de2bd"/>
+    </linearGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#a2dbcc" opacity=".25"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="958" height="270" rx="21"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="960" height="272" fill="url(#background)"/>
+    <rect x="606" y="0" width="354" height="272" fill="url(#dots)"/>
+    <g fill="none">
+      <circle cx="780" cy="137" r="102" stroke="#456764"/>
+      <circle cx="780" cy="137" r="73" stroke="#547b74" stroke-dasharray="2 7"/>
+      <path d="M780 19v236M660 137h240" stroke="#3e625f"/>
+      <path d="M625 191h44l35-35h54l47-57h48l29-29h48" stroke="url(#signal)" stroke-width="2"/>
+      <path d="M704 156v-48l47-53h39m15 44v72l39 39h54M758 156l-40 60h-44" stroke="#638b82" stroke-width="1.5"/>
+      <rect x="767" y="124" width="26" height="26" rx="5" stroke="#5de2bd" transform="rotate(45 780 137)"/>
+    </g>
+    <g fill="#112a2c" stroke="#9ef0ac" stroke-width="2">
+      <circle cx="669" cy="191" r="4"/>
+      <circle cx="704" cy="156" r="5"/>
+      <circle cx="805" cy="99" r="5"/>
+      <circle cx="882" cy="70" r="4"/>
+    </g>
+    <g fill="#87b1a6">
+      <circle cx="790" cy="55" r="3"/>
+      <circle cx="898" cy="210" r="3"/>
+      <circle cx="674" cy="216" r="3"/>
+    </g>
+    <path d="M48 61h25" stroke="#dafa99" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="87" y="68" fill="#dafa99" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">@atsuki-sakai</text>
+    <text x="44" y="157" fill="#f5f9f6" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-weight="750" font-size="81" letter-spacing="-3">Atsuki Sakai</text>
+    <text x="49" y="210" fill="#bcd1ca" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="26">AI Agents · Web Apps · Cloud</text>
+  </g>
+  <rect x="1" y="1" width="958" height="270" rx="21" fill="none" stroke="#46615f" stroke-width="2"/>
+</svg>
