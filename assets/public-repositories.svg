@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="728" height="259" viewBox="0 0 728 259" role="img" aria-labelledby="title desc">
   <title id="title">Public repository stats</title>
-  <desc id="desc">61 repositories. Top primary languages by repository count: TypeScript 32, Python 9, JavaScript 7, Dart 4.</desc>
+  <desc id="desc">61 repositories. Top primary languages by repository count: TypeScript 32, Python 10, JavaScript 7, Dart 4.</desc>
   <rect x="1" y="1" width="726" height="257" rx="17" fill="#111d24" stroke="#46615f" stroke-width="2"/>
   <path d="M255 31v196" stroke="#46615f"/>
   <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
@@ -17,8 +17,8 @@
     <text x="690" y="96" text-anchor="end">32</text>
     <text x="285" y="133">Python</text>
     <rect x="464" y="120" width="176" height="12" rx="6" fill="#2e4947"/>
-    <rect x="464" y="120" width="49.5" height="12" rx="6" fill="#9de9b4"/>
-    <text x="690" y="133" text-anchor="end">9</text>
+    <rect x="464" y="120" width="55.0" height="12" rx="6" fill="#9de9b4"/>
+    <text x="690" y="133" text-anchor="end">10</text>
     <text x="285" y="170">JavaScript</text>
     <rect x="464" y="157" width="176" height="12" rx="6" fill="#2e4947"/>
     <rect x="464" y="157" width="38.5" height="12" rx="6" fill="#9de9b4"/>
