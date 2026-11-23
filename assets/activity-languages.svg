@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="406" viewBox="0 0 960 406" role="img" aria-labelledby="title desc">
-  <title id="title">Public activity by language</title>
-  <desc id="desc">GitHub contribution counts in public repositories from 2025-11-24 through 2026-11-23, excluding this profile repository. Each contribution is grouped by its repository’s primary language. TypeScript: 61 commits, 35 opened pull requests. Python: 41 commits, 12 opened pull requests. Rust: 21 commits, 4 opened pull requests. JavaScript: 1 commit, 0 opened pull requests.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="524" viewBox="0 0 960 524" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Stats</title>
+  <desc id="desc">Public + accessible private repos owned by this account from 2025-11-24 through 2026-11-23, excluding this profile repository. Private commits: authored by this account and in the default branch history. Counts are grouped by each repository’s primary language. Rust: 1704 commits, 956 pull requests opened by this account. TypeScript: 597 commits, 128 pull requests opened by this account. JavaScript: 424 commits, 90 pull requests opened by this account. PHP: 287 commits, 90 pull requests opened by this account. HTML: 200 commits, 11 pull requests opened by this account. Other languages: 100 commits, 31 pull requests opened by this account.</desc>
   <style>
     text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
     .language, .count { fill: #fbebd3; font-size: 26px; font-weight: 650; }
@@ -23,38 +23,48 @@
     </pattern>
     <clipPath id="clip"><path d="M4 4H956V98H4Z"/></clipPath>
   </defs>
-  <path fill="#211829" d="M4 4H956V402H4Z"/>
+  <path fill="#211829" d="M4 4H956V520H4Z"/>
   <path fill="#f88169" d="M4 4H956V98H4Z"/>
   <g clip-path="url(#clip)">
     <path fill="#ee9a78" d="M729 0H958V101H665Z"/>
     <path fill="url(#halftone)" d="M729 0H960V101H665Z" opacity=".55"/>
     <path d="M847 -18L787 101M890 -18L830 101M944 -18L884 101" fill="none" stroke="#703b4b" stroke-width="5" opacity=".5"/>
   </g>
-  <path d="M4 98H956M4 4H956V402H4Z" fill="none" stroke="#130f18" stroke-width="7" stroke-linejoin="round"/>
-  <text x="40" y="63" fill="#211829" font-size="41" font-weight="900" letter-spacing="-1">Public activity by language</text>
+  <path d="M4 98H956M4 4H956V520H4Z" fill="none" stroke="#130f18" stroke-width="7" stroke-linejoin="round"/>
+  <text x="40" y="63" fill="#211829" font-size="45" font-weight="900" letter-spacing="-1">GitHub Stats</text>
+  <text x="343" y="62" fill="#211829" font-size="24" font-weight="800">Activity by language</text>
   <text x="913" y="61" fill="#211829" text-anchor="end" font-size="24" font-weight="850">LAST 365 DAYS</text>
   <text x="40" y="140" fill="#fbebd3" font-size="25" font-weight="800">Primary language</text>
   <text x="337" y="140" fill="#96dfbc" font-size="25" font-weight="800">Commits</text>
-  <text x="581" y="140" fill="#96dfbc" text-anchor="end" font-size="25" font-weight="800">124</text>
+  <text x="581" y="140" fill="#96dfbc" text-anchor="end" font-size="25" font-weight="800">3,312</text>
   <text x="667" y="140" fill="#f88169" font-size="25" font-weight="800">PRs opened</text>
-  <text x="911" y="140" fill="#f88169" text-anchor="end" font-size="25" font-weight="800">51</text>
+  <text x="911" y="140" fill="#f88169" text-anchor="end" font-size="25" font-weight="800">1,306</text>
   <path d="M40 155H920" stroke="#865569" stroke-width="2"/>
-    <text x="40" y="186" class="language">TypeScript</text>
-    <rect x="337" y="170" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:0ms" x="337" y="170" width="188.0" height="14" rx="3" fill="#96dfbc"/><text x="581" y="186" text-anchor="end" class="count">61</text>
-    <rect x="667" y="170" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:100ms" x="667" y="170" width="188.0" height="14" rx="3" fill="#f88169"/><text x="911" y="186" text-anchor="end" class="count">35</text>
+    <text x="40" y="186" class="language">Rust</text>
+    <rect x="337" y="170" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:0ms" x="337" y="170" width="156.0" height="14" rx="3" fill="#96dfbc"/><text x="581" y="186" text-anchor="end" class="count">1,704</text>
+    <rect x="667" y="170" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:100ms" x="667" y="170" width="156.0" height="14" rx="3" fill="#f88169"/><text x="911" y="186" text-anchor="end" class="count">956</text>
     <path d="M40 201H920" stroke="#49364b"/>
-    <text x="40" y="229" class="language">Python</text>
-    <rect x="337" y="213" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:75ms" x="337" y="213" width="126.4" height="14" rx="3" fill="#96dfbc"/><text x="581" y="229" text-anchor="end" class="count">41</text>
-    <rect x="667" y="213" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:175ms" x="667" y="213" width="64.5" height="14" rx="3" fill="#f88169"/><text x="911" y="229" text-anchor="end" class="count">12</text>
+    <text x="40" y="229" class="language">TypeScript</text>
+    <rect x="337" y="213" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:75ms" x="337" y="213" width="54.7" height="14" rx="3" fill="#96dfbc"/><text x="581" y="229" text-anchor="end" class="count">597</text>
+    <rect x="667" y="213" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:175ms" x="667" y="213" width="20.9" height="14" rx="3" fill="#f88169"/><text x="911" y="229" text-anchor="end" class="count">128</text>
     <path d="M40 244H920" stroke="#49364b"/>
-    <text x="40" y="272" class="language">Rust</text>
-    <rect x="337" y="256" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:150ms" x="337" y="256" width="64.7" height="14" rx="3" fill="#96dfbc"/><text x="581" y="272" text-anchor="end" class="count">21</text>
-    <rect x="667" y="256" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:250ms" x="667" y="256" width="21.5" height="14" rx="3" fill="#f88169"/><text x="911" y="272" text-anchor="end" class="count">4</text>
+    <text x="40" y="272" class="language">JavaScript</text>
+    <rect x="337" y="256" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:150ms" x="337" y="256" width="38.8" height="14" rx="3" fill="#96dfbc"/><text x="581" y="272" text-anchor="end" class="count">424</text>
+    <rect x="667" y="256" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:250ms" x="667" y="256" width="14.7" height="14" rx="3" fill="#f88169"/><text x="911" y="272" text-anchor="end" class="count">90</text>
     <path d="M40 287H920" stroke="#49364b"/>
-    <text x="40" y="315" class="language">JavaScript</text>
-    <rect x="337" y="299" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:225ms" x="337" y="299" width="3.1" height="14" rx="3" fill="#96dfbc"/><text x="581" y="315" text-anchor="end" class="count">1</text>
-    <rect x="667" y="299" width="188" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:325ms" x="667" y="299" width="0.0" height="14" rx="3" fill="#f88169"/><text x="911" y="315" text-anchor="end" class="count">0</text>
+    <text x="40" y="315" class="language">PHP</text>
+    <rect x="337" y="299" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:225ms" x="337" y="299" width="26.3" height="14" rx="3" fill="#96dfbc"/><text x="581" y="315" text-anchor="end" class="count">287</text>
+    <rect x="667" y="299" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:325ms" x="667" y="299" width="14.7" height="14" rx="3" fill="#f88169"/><text x="911" y="315" text-anchor="end" class="count">90</text>
     <path d="M40 330H920" stroke="#49364b"/>
-  <text x="40" y="350" fill="#f3c5a9" font-size="22">GitHub contributions grouped by each public repository’s primary language.</text>
-  <text x="40" y="382" fill="#f3c5a9" font-size="22">2025-11-24 to 2026-11-23 (UTC) · Excludes this profile repository</text>
+    <text x="40" y="358" class="language">HTML</text>
+    <rect x="337" y="342" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:300ms" x="337" y="342" width="18.3" height="14" rx="3" fill="#96dfbc"/><text x="581" y="358" text-anchor="end" class="count">200</text>
+    <rect x="667" y="342" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:400ms" x="667" y="342" width="1.8" height="14" rx="3" fill="#f88169"/><text x="911" y="358" text-anchor="end" class="count">11</text>
+    <path d="M40 373H920" stroke="#49364b"/>
+    <text x="40" y="401" class="language">Other languages</text>
+    <rect x="337" y="385" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:375ms" x="337" y="385" width="9.2" height="14" rx="3" fill="#96dfbc"/><text x="581" y="401" text-anchor="end" class="count">100</text>
+    <rect x="667" y="385" width="156" height="14" rx="3" fill="#49364b"/><rect class="bar" style="--delay:475ms" x="667" y="385" width="5.1" height="14" rx="3" fill="#f88169"/><text x="911" y="401" text-anchor="end" class="count">31</text>
+    <path d="M40 416H920" stroke="#49364b"/>
+  <text x="40" y="436" fill="#f3c5a9" font-size="22">Public + accessible private repos owned by this account · Repo primary language</text>
+  <text x="40" y="468" fill="#f3c5a9" font-size="22">Private commits: authored by this account and in the default branch history.</text>
+  <text x="40" y="500" fill="#f3c5a9" font-size="22">2025-11-24 to 2026-11-23 (UTC) · Excludes this profile repository</text>
 </svg>

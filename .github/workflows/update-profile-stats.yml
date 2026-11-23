@@ -14,27 +14,46 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Generate profile cards
+      - name: Generate contribution map
         env:
-          GH_TOKEN: ${{ github.token }}
           PROFILE_OWNER: ${{ github.repository_owner }}
         run: |
           set -eo pipefail
-          gh api --paginate --slurp "users/${PROFILE_OWNER}/repos?type=owner&per_page=100" |
-            python3 scripts/render-profile-stats.py
           curl -fsSL --retry 2 --max-time 25 -H 'Accept-Language: en' "https://github.com/users/${PROFILE_OWNER}/contributions" |
             python3 scripts/render-contribution-map.py
-          python3 scripts/render-activity-languages.py
+      - name: Generate anonymous aggregates
+        id: aggregates
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_AGGREGATE_TOKEN }}
+          PROFILE_OWNER: ${{ github.repository_owner }}
+        run: |
+          if [[ -z "$GH_TOKEN" ]]; then
+            echo "::notice::No aggregate read token is configured. Keeping the saved statistics and language cards."
+            exit 0
+          fi
+          if ! (
+            python3 scripts/render-profile-stats.py --owner "$PROFILE_OWNER" --include-private &&
+            python3 scripts/render-activity-languages.py --include-private
+          ); then
+            git restore -- assets/public-repositories.svg assets/activity-languages.svg
+            exit 1
+          fi
       - name: Publish changed cards
         run: |
-          if git diff --quiet -- assets/public-repositories.svg assets/contribution-map.svg assets/activity-languages.svg; then
+          git add assets/public-repositories.svg assets/contribution-map.svg assets/activity-languages.svg
+          if git diff --cached --quiet; then
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/public-repositories.svg assets/contribution-map.svg assets/activity-languages.svg
           git commit -m 'Refresh GitHub profile cards'
           git push
+      - name: Report aggregate refresh error
+        if: steps.aggregates.outcome == 'failure'
+        run: |
+          echo "::error::The last published aggregate cards were preserved. Check the read token's expiration and permissions."
+          exit 1

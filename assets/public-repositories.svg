@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="261" viewBox="0 0 960 261" role="img" aria-labelledby="title desc">
-  <title id="title">Public repository stats</title>
-  <desc id="desc">61 repositories. Top primary languages by repository count: TypeScript 32, Python 10, JavaScript 7, Dart 4.</desc>
+  <title id="title">Public repository count and top languages</title>
+  <desc id="desc">61 public repositories. Top languages by aggregate bytes, public + accessible private: Liquid 23.4%, TypeScript 21.5%, Python 20.9%, JavaScript 13.0%.</desc>
   <style>
     @media (prefers-reduced-motion: no-preference) {
       .language-bar {
@@ -42,25 +42,25 @@
     <text x="28" y="166" fill="#fbebd3" stroke="#211829" stroke-width="3" paint-order="stroke fill" font-size="90" font-weight="900" letter-spacing="-3">61</text>
     <text x="33" y="209" fill="#211829" font-size="20" font-weight="650">Excludes forks and</text>
     <text x="33" y="233" fill="#211829" font-size="20" font-weight="650">archived repositories</text>
-    <text x="345" y="46" fill="#fbebd3" font-size="24" font-weight="850">Primary languages</text>
-    <text x="914" y="46" fill="#f3c5a9" font-size="19" text-anchor="end">By repository count</text>
+    <text x="345" y="46" fill="#fbebd3" font-size="24" font-weight="850">Top languages</text>
+    <text x="914" y="46" fill="#f3c5a9" font-size="19" text-anchor="end">Public + accessible private · by bytes</text>
   </g>
   <g fill="#fbebd3" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">
-    <text x="345" y="96">TypeScript</text>
-    <rect x="552" y="82" width="292" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
-    <rect class="language-bar" style="--delay: 0ms" x="552" y="82" width="292.0" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
-    <text x="914" y="96" text-anchor="end">32</text>
-    <text x="345" y="135">Python</text>
-    <rect x="552" y="121" width="292" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
-    <rect class="language-bar" style="--delay: 120ms" x="552" y="121" width="91.2" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
-    <text x="914" y="135" text-anchor="end">10</text>
-    <text x="345" y="174">JavaScript</text>
-    <rect x="552" y="160" width="292" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
-    <rect class="language-bar" style="--delay: 240ms" x="552" y="160" width="63.9" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
-    <text x="914" y="174" text-anchor="end">7</text>
-    <text x="345" y="213">Dart</text>
-    <rect x="552" y="199" width="292" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
-    <rect class="language-bar" style="--delay: 360ms" x="552" y="199" width="36.5" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
-    <text x="914" y="213" text-anchor="end">4</text>
+    <text x="345" y="96">Liquid</text>
+    <rect x="552" y="82" width="273" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
+    <rect class="language-bar" style="--delay: 0ms" x="552" y="82" width="63.8" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
+    <text x="914" y="96" text-anchor="end">23.4%</text>
+    <text x="345" y="135">TypeScript</text>
+    <rect x="552" y="121" width="273" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
+    <rect class="language-bar" style="--delay: 120ms" x="552" y="121" width="58.7" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
+    <text x="914" y="135" text-anchor="end">21.5%</text>
+    <text x="345" y="174">Python</text>
+    <rect x="552" y="160" width="273" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
+    <rect class="language-bar" style="--delay: 240ms" x="552" y="160" width="57.0" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
+    <text x="914" y="174" text-anchor="end">20.9%</text>
+    <text x="345" y="213">JavaScript</text>
+    <rect x="552" y="199" width="273" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>
+    <rect class="language-bar" style="--delay: 360ms" x="552" y="199" width="35.5" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>
+    <text x="914" y="213" text-anchor="end">13.0%</text>
   </g>
 </svg>
