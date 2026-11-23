@@ -2,7 +2,7 @@ name: Update profile stats
 
 on:
   schedule:
-    - cron: "17 2 * * 1"
+    - cron: "17 2 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -17,21 +17,23 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Generate SVG from public repositories
+      - name: Generate profile cards
         env:
           GH_TOKEN: ${{ github.token }}
           PROFILE_OWNER: ${{ github.repository_owner }}
         run: |
-          set -o pipefail
+          set -eo pipefail
           gh api --paginate --slurp "users/${PROFILE_OWNER}/repos?type=owner&per_page=100" |
             python3 scripts/render-profile-stats.py
-      - name: Publish changed card
+          curl -fsSL --retry 2 --max-time 25 -H 'Accept-Language: en' "https://github.com/users/${PROFILE_OWNER}/contributions" |
+            python3 scripts/render-contribution-map.py
+      - name: Publish changed cards
         run: |
-          if git diff --quiet -- assets/public-repositories.svg; then
+          if git diff --quiet -- assets/public-repositories.svg assets/contribution-map.svg; then
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/public-repositories.svg
-          git commit -m 'Refresh public repository stats'
+          git add assets/public-repositories.svg assets/contribution-map.svg
+          git commit -m 'Refresh GitHub profile cards'
           git push

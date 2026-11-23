@@ -12,29 +12,42 @@ def render_card(repository_count: int, languages: Counter[str]) -> str:
     largest_count = max(languages.values(), default=1)
     rows = []
     for index, (language, count) in enumerate(top_languages):
-        y = 96 + 37 * index
-        bar_width = round(176 * count / largest_count, 1)
+        y = 96 + 39 * index
+        bar_width = round(292 * count / largest_count, 1)
         rows.append(
-            f'    <text x="285" y="{y}">{escape(language)}</text>\n'
-            f'    <rect x="464" y="{y - 13}" width="176" height="12" rx="6" fill="#2e4947"/>\n'
-            f'    <rect x="464" y="{y - 13}" width="{bar_width}" height="12" rx="6" fill="#9de9b4"/>\n'
-            f'    <text x="690" y="{y}" text-anchor="end">{count}</text>'
+            f'    <text x="345" y="{y}">{escape(language)}</text>\n'
+            f'    <rect x="552" y="{y - 14}" width="292" height="13" fill="#49364b" stroke="#130f18" stroke-width="2"/>\n'
+            f'    <rect x="552" y="{y - 14}" width="{bar_width}" height="13" fill="#96dfbc" stroke="#130f18" stroke-width="2"/>\n'
+            f'    <text x="914" y="{y}" text-anchor="end">{count}</text>'
         )
     description = ", ".join(f"{language} {count}" for language, count in top_languages)
     chart = "\n".join(rows)
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="728" height="259" viewBox="0 0 728 259" role="img" aria-labelledby="title desc">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="960" height="261" viewBox="0 0 960 261" role="img" aria-labelledby="title desc">
   <title id="title">Public repository stats</title>
   <desc id="desc">{repository_count} repositories. Top primary languages by repository count: {escape(description)}.</desc>
-  <rect x="1" y="1" width="726" height="257" rx="17" fill="#111d24" stroke="#46615f" stroke-width="2"/>
-  <path d="M255 31v196" stroke="#46615f"/>
+  <defs>
+    <pattern id="halftone" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#713742"/>
+    </pattern>
+    <clipPath id="stat-panel">
+      <path d="M4 4H330L288 257H4Z"/>
+    </clipPath>
+  </defs>
+  <path fill="#211829" d="M4 4H956V257H4Z"/>
+  <path fill="#f88169" d="M4 4H330L288 257H4Z"/>
+  <path fill="url(#halftone)" clip-path="url(#stat-panel)" d="M168 0H335V261H122L168 216Z" opacity=".34"/>
+  <path d="M330 4L288 257M4 4H956V257H4Z" fill="none" stroke="#130f18" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M345 64H914" stroke="#8a5366" stroke-width="2"/>
   <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
-    <text x="34" y="53" fill="#bcd1ca" font-size="19" font-weight="600">Public repositories</text>
-    <text x="32" y="150" fill="#f5f9f6" font-size="78" font-weight="700">{repository_count}</text>
-    <text x="34" y="194" fill="#bcd1ca" font-size="17">Excludes forks</text>
-    <text x="34" y="219" fill="#bcd1ca" font-size="17">and archived repos</text>
-    <text x="285" y="53" fill="#bcd1ca" font-size="19" font-weight="600">Top languages by repository count</text>
+    <text x="33" y="48" fill="#211829" font-size="23" font-weight="850" letter-spacing="1">PUBLIC</text>
+    <text x="33" y="75" fill="#211829" font-size="23" font-weight="850" letter-spacing="1">REPOSITORIES</text>
+    <text x="28" y="166" fill="#fbebd3" stroke="#211829" stroke-width="3" paint-order="stroke fill" font-size="90" font-weight="900" letter-spacing="-3">{repository_count}</text>
+    <text x="33" y="209" fill="#211829" font-size="20" font-weight="650">Excludes forks and</text>
+    <text x="33" y="233" fill="#211829" font-size="20" font-weight="650">archived repositories</text>
+    <text x="345" y="46" fill="#fbebd3" font-size="24" font-weight="850">Primary languages</text>
+    <text x="914" y="46" fill="#f3c5a9" font-size="19" text-anchor="end">By repository count</text>
   </g>
-  <g fill="#f5f9f6" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="19">
+  <g fill="#fbebd3" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">
 {chart}
   </g>
 </svg>
