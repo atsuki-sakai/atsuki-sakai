@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="281" viewBox="0 0 960 281" role="img" aria-labelledby="title desc">
-  <title id="title">Contribution map · 9,645 contributions in the last year</title>
-  <desc id="desc">GitHub's public activity from 2025-11-23 through 2026-11-23, arranged as city blocks. Each column is a week. Pink, coral, and ivory show increasing activity.</desc>
+  <title id="title">Contribution map · 9,755 contributions in the last year</title>
+  <desc id="desc">GitHub's public activity from 2025-11-23 through 2026-11-24, arranged as city blocks. Each column is a week. Pink, coral, and ivory show increasing activity.</desc>
   <style>
     .motion { display: none; }
     @media (prefers-reduced-motion: no-preference) {
@@ -435,13 +435,14 @@
     <rect x="892" y="196" width="10" height="15" rx="1" fill="#9c4c7e" data-date="2026-11-14" data-level="1"/>
     <rect x="905" y="82" width="10" height="15" rx="1" fill="#de6c93" data-date="2026-11-15" data-level="2"/>
     <rect x="905" y="101" width="10" height="15" rx="1" fill="#9c4c7e" data-date="2026-11-16" data-level="1"/>
-    <rect x="905" y="120" width="10" height="15" rx="1" fill="#9c4c7e" data-date="2026-11-17" data-level="1"/>
+    <rect x="905" y="120" width="10" height="15" rx="1" fill="#de6c93" data-date="2026-11-17" data-level="2"/>
     <rect x="905" y="139" width="10" height="15" rx="1" fill="#de6c93" data-date="2026-11-18" data-level="2"/>
     <rect x="905" y="158" width="10" height="15" rx="1" fill="#9c4c7e" data-date="2026-11-19" data-level="1"/>
     <rect x="905" y="177" width="10" height="15" rx="1" fill="#9c4c7e" data-date="2026-11-20" data-level="1"/>
     <rect x="905" y="196" width="10" height="15" rx="1" fill="#9c4c7e" data-date="2026-11-21" data-level="1"/>
     <rect x="918" y="82" width="10" height="15" rx="1" fill="#de6c93" data-date="2026-11-22" data-level="2"/>
     <rect x="918" y="101" width="10" height="15" rx="1" fill="#de6c93" data-date="2026-11-23" data-level="2"/>
+    <rect x="918" y="120" width="10" height="15" rx="1" fill="#de6c93" data-date="2026-11-24" data-level="2"/>
     </g>
     <g class="motion" clip-path="url(#grid-window)" aria-hidden="true">
       <g class="scan">
@@ -452,7 +453,7 @@
     <g fill="#fff0d5" font-family="Impact, Arial Narrow, Helvetica, sans-serif" font-weight="800">
       <text x="23" y="55" font-size="19">CONTRIBUTION</text>
       <text x="22" y="91" font-size="38">MAP</text>
-      <text class="still-total" x="19" y="162" font-size="55" letter-spacing="-2">9,645</text>
+      <text class="still-total" x="19" y="162" font-size="55" letter-spacing="-2">9,755</text>
       <g class="motion" clip-path="url(#counter-window)" aria-hidden="true">
         <g class="total-frames" font-size="55" letter-spacing="-2">
       <text x="19" y="162">0</text>
@@ -503,12 +504,12 @@
       <text x="19" y="3627">6,890</text>
       <text x="19" y="3704">7,303</text>
       <text x="19" y="3781">7,485</text>
-      <text x="19" y="3858">7,862</text>
-      <text x="19" y="3935">8,284</text>
-      <text x="19" y="4012">9,062</text>
-      <text x="19" y="4089">9,307</text>
-      <text x="19" y="4166">9,530</text>
-      <text x="19" y="4243">9,645</text>
+      <text x="19" y="3858">7,863</text>
+      <text x="19" y="3935">8,298</text>
+      <text x="19" y="4012">9,081</text>
+      <text x="19" y="4089">9,332</text>
+      <text x="19" y="4166">9,588</text>
+      <text x="19" y="4243">9,755</text>
         </g>
       </g>
       <text x="24" y="186" font-size="13" letter-spacing=".5">IN THE LAST YEAR</text>
@@ -519,7 +520,7 @@
     </g>
     <g fill="#f2c2af" font-family="Consolas, Menlo, monospace" font-size="11">
       <text x="24" y="233">2025-11-23</text>
-      <text x="24" y="252">→ 2026-11-23</text>
+      <text x="24" y="252">→ 2026-11-24</text>
     </g>
     <rect x="741" y="233" width="203" height="30" rx="4" fill="#201724" stroke="#0e0a11" stroke-width="2"/>
     <g fill="#f6dbc6" font-family="Helvetica, sans-serif" font-size="13" font-weight="700">
