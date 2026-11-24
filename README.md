@@ -1,7 +1,5 @@
 ![Atsuki Sakai · AI Agents, Web Apps, Cloud · バンコクの2Dコミックバナー](assets/bangkok-profile-banner.svg)
 
-AIエージェントとWebアプリを開発しています。Google Cloudの運用や、日々の作業を自動化するツールを作っています。
-
 ## GitHubでの活動
 
 ![過去1年のコントリビューション。日ごとの活動量で街区が点灯し、累計が増えるバンコク風の地図](assets/contribution-map.svg)
